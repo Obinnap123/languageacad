@@ -1,0 +1,59 @@
+.black {
+  color: $black;
+}
+.bg-primary {
+  background-color: $primary-color;
+}
+
+.bg-secondary {
+  background-color: $secondary-color;
+}
+
+.bg-tertiary {
+  background-color: $tertiary-color;
+}
+.btn {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25.5px;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 10px;
+  @include tablet_768 {
+    padding: 4px 10px;
+  }
+  @include tabletAndAbove {
+    padding: 8px 20px;
+  }
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  border: 1px solid $primary-color;
+  color: $white;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.btn-secondary {
+  background-color: $secondary-color;
+  border: 1px solid $secondary-color;
+  color: $black;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+.d-flex {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+.d-none {
+    display: none;
+}  
+.white {
+  color: $white;
+}

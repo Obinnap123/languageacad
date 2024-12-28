@@ -1,0 +1,11 @@
+@use "../styles" as *;
+
+body {
+  font: {
+    family: $font-family;
+    weight: $font-weight;
+    style: $font-style;
+    size: $font-size;
+  }
+
+}

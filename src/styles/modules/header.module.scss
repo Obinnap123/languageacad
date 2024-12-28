@@ -1,0 +1,97 @@
+@use "../" as *;
+
+.header {
+  .navbar {
+    @include flex;
+    padding: 30px 80px;
+    @include smallMobile {
+      padding: 20px;
+    }
+    @include tablet_768 {
+      padding: 30px 30px;
+    }
+    @include tabletAndAbove {
+      padding: 30px 50px;
+    }
+    @include laptop {
+      padding: 30px 80px;
+    }
+    .logo1 {
+      width: 150px;
+      @include smallMobile {
+        width: 80px;
+      }
+      @include smallTablet {
+        width: 100px;
+      }
+      @include tablet_768 {
+        width: 150px;
+      }
+    }
+    .navbarUl {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0 0 10px;
+      ul {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        width: 50%;
+        color: rgba(55, 55, 55, 1);
+        font: {
+          size: 17px;
+          weight: 500;
+        }
+        line-height: 25.5px;
+        @include smallMobile {
+          display: none;
+        }
+        @include tablet_768 {
+          gap: 30px;
+          width: 65%;
+          display: flex;
+        }
+        @include tabletAndAbove {
+          gap: 60px;
+          width: 60%;
+        }
+        @include laptop {
+          width: 50%;
+        }
+      }
+      .auth {
+        display: flex;
+        gap: 60px;
+        @include smallMobile {
+          display: none;
+        }
+        @include tablet_768 {
+          gap: 30px;
+          display: flex;
+        }
+        @include tabletAndAbove {
+          gap: 60px;
+        }
+        .login {
+          border: 1px solid $primary-color;
+        }
+      }
+      .hamburger {
+        @include smallMobile {
+          display: block;
+        }
+        @include tablet_768 {
+          display: none;
+        }
+        & .hamburger-img {
+          display: block;
+        }
+        & .x-icon {
+          display: none;
+        }
+      }
+    }
+  }
+}

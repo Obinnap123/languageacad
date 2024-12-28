@@ -34,6 +34,7 @@
       justify-content: flex-end;
       align-items: center;
       padding: 0 0 10px;
+
       ul {
         display: flex;
         justify-content: center;
@@ -45,8 +46,10 @@
           weight: 500;
         }
         line-height: 25.5px;
+
         @include smallMobile {
-          display: none;
+          display: block;
+          width: auto;
         }
         @include tablet_768 {
           gap: 30px;
@@ -60,16 +63,28 @@
         @include laptop {
           width: 50%;
         }
+        li {
+          @include smallMobile {
+            padding: 0 0 20px;
+          }
+          @include tablet_768 {
+            padding: 0;
+          }
+        }
       }
       .auth {
         display: flex;
         gap: 60px;
+
         @include smallMobile {
-          display: none;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
         }
         @include tablet_768 {
           gap: 30px;
           display: flex;
+          flex-direction: row;
         }
         @include tabletAndAbove {
           gap: 60px;
@@ -78,18 +93,45 @@
           border: 1px solid $primary-color;
         }
       }
-      .hamburger {
+    }
+    .hamburger {
+      @include smallMobile {
+        display: block;
+      }
+      @include tablet_768 {
+        display: none;
+      }
+    }
+    .menu {
+      position: relative;
+      @include smallMobile {
+        display: none;
+      }
+      @include tablet_768 {
+        display: flex;
+      }
+      &.active {
         @include smallMobile {
-          display: block;
+          position: absolute;
+          top: 75px;
+          display: flex;
+          flex-direction: column;
+          background-color: white;
+          width: 100%;
+          border-radius: 6px;
+          text-align: center;
+          padding: 24px 0;
+          margin: 0 auto;
+          left: 50%;
+          transform: translateX(-50%);
+          font-size: 14px;
+          z-index: 100;
         }
         @include tablet_768 {
-          display: none;
-        }
-        & .hamburger-img {
-          display: block;
-        }
-        & .x-icon {
-          display: none;
+          flex-direction: row;
+          position: static;
+          margin: 0;
+          transform: none;
         }
       }
     }

@@ -57,7 +57,7 @@ html {
   padding: 8px 20px;
   border-radius: 10px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 320px) {
   .btn {
     padding: 4px 10px;
   }

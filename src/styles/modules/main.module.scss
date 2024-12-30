@@ -1,0 +1,105 @@
+@use "../" as *;
+.main {
+  .hero-section {
+    @include smallMobile {
+      flex-direction: column;
+      justify-content: unset;
+      align-items: unset;
+    }
+    @include tabletAndAbove {
+      flex-direction: row;
+      align-items: $align;
+      justify-content: $justify;
+    }
+    .hero-left {
+      padding: 0 0 0 80px;
+      @include smallMobile {
+        padding: 0 20px;
+      }
+      @include tablet_768 {
+        padding: 0 0 0 30px;
+      }
+      @include tabletAndAbove {
+        padding: 0 0 0 50px;
+      }
+      @include laptop {
+        padding: 0 0 0 80px;
+      }
+      .language-ambassador {
+        padding: 0 0 30px;
+        @include smallMobile {
+          text-wrap: wrap;
+        }
+        @include tablet_768 {
+          text-wrap: nowrap;
+        }
+      }
+      .platform-description {
+        width: 610px;
+        margin-bottom: 100px;
+        @include smallMobile {
+          width: 100%;
+          margin-bottom: 50px;
+        }
+        @include tablet_768 {
+          width: 610px;
+        }
+        @include tabletAndAbove {
+          width: 450px;
+          margin-bottom: 100px;
+        }
+        @include laptop {
+          width: 610px;
+        }
+      }
+      .join-now-btn {
+        @include smallMobile {
+          margin-bottom: 30px;
+        }
+        @include tablet_768 {
+          margin-bottom: 0;
+        }
+        a {
+          padding: 12px 25px;
+          border-radius: 8px;
+          color: $white;
+          img {
+            position: relative;
+            top: 4px;
+            width: 20px;
+            margin-left: 25px;
+          }
+        }
+      }
+    }
+    .hero-right {
+      img {
+        &.first-girl-img {
+          width: 500px;
+          @include smallMobile {
+            display: none;
+          }
+          @include tabletAndAbove {
+            width: 400px;
+            display: block;
+          }
+          @include laptop {
+            width: 500px;
+          }
+          @include largerLaptop {
+            width: 600px;
+          }
+        }
+        &.second-girl-img {
+          width: 100%;
+          @include smallMobile {
+            display: block;
+          }
+          @include tabletAndAbove {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

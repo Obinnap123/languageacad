@@ -7,6 +7,7 @@ import Xicon from "./close-icon.svg";
 import Facebook from "./facebook-icon.svg";
 import Twitter from "./twitter-icon.svg";
 import Instagram from "./instagram-icon.svg";
+import Arrow from "./arrow_forward.svg"
 
 const Images = {
   Logo1,
@@ -17,6 +18,7 @@ const Images = {
   Xicon,
   Facebook,
   Twitter,
-  Instagram
+  Instagram,
+  Arrow
 };
 export default Images;

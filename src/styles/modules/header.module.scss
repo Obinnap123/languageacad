@@ -91,6 +91,10 @@
         }
         .login {
           border: 1px solid $primary-color;
+          &:hover {
+            background-color: $primary-color;
+            color: white;
+          }
         }
       }
     }

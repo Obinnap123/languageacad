@@ -81,6 +81,20 @@ function Main() {
         },
       },
       {
+        breakpoint: 768, // Small tablets or large phones
+        settings: {
+          slidesToShow: 1.5, // Show 1.5 slides at a time
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 540, // Large mobile screens
+        settings: {
+          slidesToShow: 1.2, // Show slightly more than 1 card
+          centerMode: false,
+        },
+      },
+      {
         breakpoint: 320,
         settings: {
           slidesToShow: 1,

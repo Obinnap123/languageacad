@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import Images from "../assests/images";
 import styles from "../styles/modules/main.module.scss";
 import Card from "./Card";
+import ListItems from "./ListItems";
 function Main() {
   const cardData = [
     {
@@ -54,16 +55,6 @@ function Main() {
       link: { text: "Learn More", url: "#", icon: "path-to-arrow-icon.jpg" },
     },
   ];
-  // const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setIsMobile(window.innerWidth < 768);
-  //   };
-
-  //   window.addEventListener("resize", handleResize);
-  //   return () => window.removeEventListener("resize", handleResize);
-  // }, []);
 
   const sliderSettings = {
     dots: true, // Enable pagination dots
@@ -103,6 +94,34 @@ function Main() {
       },
     ],
   };
+
+  const benefitsData = [
+    { text: "Learn one language free", image: Images.CheckMark, imageClass: "check-mark", },
+    {
+      text: "Earn 10 dollars on every Diamond Plus Ambassador registered",
+      image: Images.CheckMark, imageClass: "check-mark",
+    },
+    {
+      text: "Earn 5 dollars on every Premium Ambassador registered",
+      image: Images.CheckMark, imageClass: "check-mark",
+    },
+    {
+      text: "Earn 3 dollars on every Enterprise Ambassador registered",
+      image: Images.CheckMark, imageClass: "check-mark",
+    },
+    {
+      text: "Earn 0 dollars on every Access Pro Ambassador registered",
+      image: Images.CheckMark, imageClass: "check-mark",
+    },
+    {
+      text: "Earn 10 dollars on every student you bring to language academy",
+      image: Images.CheckMark, imageClass: "check-mark",
+    },
+    {
+      text: "Earn 5 dollars each from all students your downline register every month",
+      image: Images.CheckMark, imageClass: "check-mark",
+    },
+  ];
 
   return (
     <>
@@ -171,14 +190,31 @@ function Main() {
                 ))}
               </Slider>
             </div>
-            {/* <div className={styles.singleCard}>
-                <Card
-                  image={cardData[3].image}
-                  title={cardData[3].title}
-                  description={cardData[3].description}
-                  link={cardData[3].link}
-                />
-              </div> */}
+          </div>
+        </section>
+        <section className={`${styles["second-section"]}`}>
+          <div className={`${styles["subscription-section"]}`}>
+            <h2>SUBSCRPTION PLAN AND BENEFITS</h2>
+            <div className={`${styles["enterprise-ambassador"]}`}>
+              <div className={styles["enterprise-ambassador-left"]}>
+                <img src={Images.Man1} alt="man pointing downwards" className={`${styles["Man1"]}`}/>
+              </div>
+              <div className={styles["enterprise-ambassador-right"]}>
+                <p>Easier decision making for</p>
+                <h3>ENTERPRISE AMBASSADOR </h3>
+                <ul>
+                  {benefitsData.map((benefit, index) => (
+                    <ListItems
+                      key={index}
+                      image={benefit.image}
+                      text={benefit.text}
+                      imageClass={benefit.imageClass}
+                    />
+                  ))}
+                </ul>
+                <a href="">Subscribe</a>
+              </div>
+            </div>
           </div>
         </section>
       </main>

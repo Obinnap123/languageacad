@@ -12,6 +12,8 @@ import Group1 from "./group(1).svg";
 import Group2 from "./group(2).svg";
 import Group3 from "./group(3).svg";
 import Group4 from "./group.svg";
+import Man1 from "./man-pointing-down.png"
+import CheckMark from "./checkmark-circle-gold.svg"
 
 const Images = {
   Logo1,
@@ -28,5 +30,7 @@ const Images = {
   Group2,
   Group3,
   Group4,
+  Man1,
+  CheckMark,
 };
 export default Images;

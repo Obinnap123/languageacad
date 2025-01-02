@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // import React from "react";
 import Images from "../assests/images";
 import styles from "../styles/modules/header.module.scss";
-import Button from "./Button";
+// import Button from "./Button";
 function Header() {
   const navItems = [
     {

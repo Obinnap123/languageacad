@@ -109,12 +109,12 @@
         padding: 50px 0 0;
         h2 {
           text-align: center;
-          @include smallMobile {
-            font-size: 20px;
-          }
-          @include tablet_768 {
-            font-size: 25px;
-          }
+          // @include smallMobile {
+          //   font-size: 20px;
+          // }
+          // @include tablet_768 {
+          //   font-size: 25px;
+          // }
         }
         p {
           width: 600px;
@@ -220,6 +220,13 @@
       h2 {
         text-align: center;
         padding-top: 50px;
+        @include smallMobile {
+          width: 300px;
+          margin: 0 auto;
+        }
+        @include smallTablet {
+          width: 100%;
+        }
       }
       .enterprise-ambassador {
         display: flex;

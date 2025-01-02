@@ -38,7 +38,6 @@ body {
 //         color: #007bff;
 //         text-decoration: none;
 //         font-weight: bold;
-      
 
 //       .card-arrow {
 //         width: 16px;
@@ -52,23 +51,24 @@ body {
   flex-wrap: wrap;
   gap: 20px;
 }
-.slick-prev{
+.slick-prev,
+.slick-next {
   position: static;
 }
-.slick-slide{
+.slick-slide {
   width: auto !important;
   margin: 0 40px 0 0;
-  @include smallMobile{
+  @include smallMobile {
     margin: 0 20px 0 0;
   }
-  @include tabletAndAbove{
+  @include tabletAndAbove {
     margin: 0 30px 0 0;
   }
-  @include laptop{
+  @include laptop {
     margin: 0 40px 0 0;
   }
 }
-.slick-track{
+.slick-track {
   display: flex;
   width: auto !important;
   // transform: translate3d(-560px, 0px, 0px) !important;

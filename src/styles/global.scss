@@ -7,5 +7,69 @@ body {
     style: $font-style;
     size: $font-size;
   }
+}
 
+// .card {
+//   width: 300px;
+//   padding: 1rem;
+//   border: 1px solid #ccc;
+//   border-radius: 8px;
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+//   text-align: center;
+
+//   .card-image {
+//     width: 100%;
+//     border-radius: 8px 8px 0 0;
+
+//     .card-title {
+//       font-size: 1.5rem;
+//       margin: 1rem 0 0.5rem;
+//     }
+//       .card-writeup {
+//         font-size: 1rem;
+//         color: #555;
+//         margin-bottom: 1rem;
+//       }
+
+//       .card-link {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         color: #007bff;
+//         text-decoration: none;
+//         font-weight: bold;
+      
+
+//       .card-arrow {
+//         width: 16px;
+//         margin-left: 0.5rem;
+//       }
+//     }
+//   }
+// }
+.sliderWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.slick-prev{
+  position: static;
+}
+.slick-slide{
+  width: auto !important;
+  margin: 0 40px 0 0;
+  @include smallMobile{
+    margin: 0 20px 0 0;
+  }
+  @include tabletAndAbove{
+    margin: 0 30px 0 0;
+  }
+  @include laptop{
+    margin: 0 40px 0 0;
+  }
+}
+.slick-track{
+  display: flex;
+  width: auto !important;
+  // transform: translate3d(-560px, 0px, 0px) !important;
 }

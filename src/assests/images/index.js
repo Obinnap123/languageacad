@@ -7,7 +7,11 @@ import Xicon from "./close-icon.svg";
 import Facebook from "./facebook-icon.svg";
 import Twitter from "./twitter-icon.svg";
 import Instagram from "./instagram-icon.svg";
-import Arrow from "./arrow_forward.svg"
+import Arrow from "./arrow_forward.svg";
+import Group1 from "./group(1).svg";
+import Group2 from "./group(2).svg";
+import Group3 from "./group(3).svg";
+import Group4 from "./group.svg";
 
 const Images = {
   Logo1,
@@ -19,6 +23,10 @@ const Images = {
   Facebook,
   Twitter,
   Instagram,
-  Arrow
+  Arrow,
+  Group1,
+  Group2,
+  Group3,
+  Group4,
 };
 export default Images;

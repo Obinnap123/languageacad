@@ -431,7 +431,7 @@
           padding-bottom: 20px;
           color: rgba(86, 117, 146, 1);
           @include smallMobile {
-            width: 300px;
+            width: 280px;
             font-size: 13px;
           }
           @include tablet_768 {
@@ -501,7 +501,7 @@
         p {
           padding: 30px 0 0;
           @include smallMobile {
-            width: 300px;
+            width: 280px;
             text-align: center;
           }
           @include tablet_768 {
@@ -524,7 +524,7 @@
         p {
           width: 402px;
           @include smallMobile {
-            width: 300px;
+            width: 280px;
           }
           @include tabletAndAbove {
             width: 402px;
@@ -536,7 +536,7 @@
             text-align: center;
             @include smallMobile {
               text-align: left;
-              width: 350px;
+              width: 280px;
             }
             @include tabletAndAbove {
               text-align: center;

@@ -496,6 +496,18 @@ function Main() {
             </div>
           </div>
         </section>
+        <section className={styles["eighth-section"]}>
+          <div className={styles["ready"]}>
+            <h2>Ready to start a journey with us?</h2>
+            <div>
+              <a href="">
+                <span>
+                  Apply Online <img src={Images.Arrow} alt="" />
+                </span>
+              </a>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );

@@ -612,4 +612,63 @@
       }
     }
   }
+  .eighth-section {
+    .ready {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 80px;
+      @include smallMobile {
+        padding: 20px;
+        flex-direction: column;
+      }
+      @include tablet_768 {
+        padding: 30px;
+      }
+      @include tabletAndAbove {
+        flex-direction: row;
+        padding: 30px 50px;
+      }
+      @include laptop {
+        padding: 30px 80px;
+      }
+      h2 {
+        text-align: center;
+        @include smallMobile {
+          padding-bottom: 20px;
+        }
+        @include tablet_768 {
+          padding: 0;
+        }
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include smallMobile {
+          // display: block;
+        }
+        @include tabletAndAbove {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        a {
+          border: 1px solid #52b6ec;
+          padding: 10px 30px;
+          text-align: center;
+          background-color: #52b6ec;
+          border-radius: 8px;
+          span {
+            display: flex;
+            align-items: center;
+            color: $white;
+          }
+          img {
+            width: 20px;
+            margin: 0 0 0 15px;
+          }
+        }
+      }
+    }
+  }
 }

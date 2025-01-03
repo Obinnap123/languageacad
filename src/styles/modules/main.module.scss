@@ -105,30 +105,26 @@
   .first-section {
     .packages {
       background-color: #f7f7f7;
+
       .ambassador-packages {
         padding: 50px 0 0;
+
         h2 {
           text-align: center;
-          // @include smallMobile {
-          //   font-size: 20px;
-          // }
-          // @include tablet_768 {
-          //   font-size: 25px;
-          // }
         }
+
         p {
           width: 600px;
           text-align: center;
           margin: 0 auto;
           color: rgba(125, 125, 125, 1);
+
           @include smallMobile {
             width: 300px;
           }
-          @include tablet_768 {
-            width: 600px;
-          }
         }
       }
+
       .mainContainer {
         padding: 30px 80px;
 
@@ -140,27 +136,13 @@
         @include tablet_768 {
           padding: 30px;
         }
+
         @include tabletAndAbove {
           padding: 30px 50px;
         }
         @include laptop {
           padding: 30px 80px;
         }
-        // Row of Cards
-        // .cardRow {
-        //   display: flex;
-        //   justify-content: space-between;
-        //   flex-wrap: wrap; // Ensures cards wrap if there's not enough space
-        //   width: 100%;
-        //   margin-bottom: 20px;
-        //   gap: 20px; // Adds spacing between cards
-        // }
-
-        // Centered Card
-        // .singleCard {
-        //   width: 60%;
-        //   margin: 0 auto;
-        // }
       }
 
       .card {
@@ -168,35 +150,29 @@
         border: 1px solid #ddd;
         border-radius: 8px;
         padding: 20px;
-        width: 300px; // Fixed width for cards
+        width: 300px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
-        @include laptop {
-          width: 300px;
-        }
         @include largerLaptop {
           width: 350px;
         }
 
-        // Nested styles for card elements
         .cardImage {
-          width: 15%; // Ensures the image spans the card width
-          height: auto; // Maintains aspect ratio
+          width: 15%;
+          height: auto;
           border-radius: 8px 8px 0 0;
-          margin-bottom: 10px; // Adds spacing below the image
+          margin-bottom: 10px;
         }
 
         .cardTitle {
           font-size: 1.5rem;
           margin: 10px 0;
-          // text-align: center; // Centers the title
         }
 
         .cardDescription {
           font-size: 1rem;
           color: #555;
           line-height: 1.5;
-          // text-align: center; // Centers the description
         }
 
         .cardLink {
@@ -214,341 +190,156 @@
       }
     }
   }
-  .second-section {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid;
-    .subscription-section {
-      h2 {
-        text-align: center;
-        padding-top: 50px;
-        @include smallMobile {
-          width: 300px;
-          margin: 0 auto;
-        }
-        @include smallTablet {
-          width: 100%;
-        }
-      }
-      .enterprise-ambassador {
-        display: flex;
-        justify-content: space-between;
-        padding: 50px 80px;
-        @include smallMobile {
-          flex-direction: column;
-          padding: 20px;
-        }
-        @include tablet_768 {
-          flex-direction: column;
-          padding: 30px;
-        }
-        @include tabletAndAbove {
-          padding: 50px 50px 0;
-          flex-direction: row;
-        }
-        @include laptop {
-          padding: 50px 80px 0;
-        }
-        .enterprise-ambassador-left {
-          img {
-            &.Man1 {
-              width: 450px;
-              @include smallMobile {
-                width: 100%;
-              }
-              @include tabletAndAbove {
-                width: 450px;
-              }
-            }
-          }
-        }
-        .enterprise-ambassador-right {
-          ul {
-            padding-top: 20px;
-            li {
-              padding-bottom: 25px;
-              width: 350px;
-              @include smallMobile {
-                width: 100%;
-              }
-              @include tabletAndAbove {
-                width: 400px;
-              }
-              span {
-                display: flex;
-                gap: 8px;
-              }
-              img {
-                width: 25px;
-                @include smallMobile {
-                  width: 15px;
-                }
-                @include smallTablet {
-                  width: 20px;
-                }
-                @include tablet_768 {
-                  width: 25px;
-                }
-              }
-            }
-          }
-          a {
-            &.subscribe {
-              border: 1px solid #ff9900;
-              padding: 8px 20px;
-              border-radius: 5px;
-              margin-left: 35px;
-              background-color: #ff9900;
-              color: $black;
-            }
-          }
-        }
-      }
-    }
-  }
-  .third-section {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid;
-    .access-pro-ambassador {
-      display: flex;
-      justify-content: space-between;
-      padding: 50px 80px;
-      @include smallMobile {
-        flex-direction: column;
-        padding: 20px;
-      }
-      @include tablet_768 {
-        flex-direction: column;
-        padding: 30px;
-      }
-      @include tabletAndAbove {
-        padding: 50px 50px 0;
-        flex-direction: row;
-      }
-      @include laptop {
-        padding: 50px 80px 0;
-      }
-      .access-pro-ambassador-left {
-        @include smallMobile {
-          order: 1;
-        }
-        @include tabletAndAbove {
-          order: unset;
-        }
-        ul {
-          padding-top: 20px;
-          li {
-            padding-bottom: 25px;
-            width: 350px;
-            @include smallMobile {
-              width: 100%;
-            }
-            @include tabletAndAbove {
-              width: 400px;
-            }
-            span {
-              display: flex;
-              gap: 8px;
-            }
-            img {
-              width: 25px;
-              @include smallMobile {
-                width: 15px;
-              }
-              @include smallTablet {
-                width: 20px;
-              }
-              @include tablet_768 {
-                width: 25px;
-              }
-            }
-          }
-        }
-        a {
-          &.subscribe {
-            border: 1px solid #ff9900;
-            padding: 8px 20px;
-            border-radius: 5px;
-            margin-left: 35px;
-            background-color: #ff9900;
-            color: $black;
-          }
-        }
-      }
-      .access-pro-ambassador-right {
-        img {
-          &.GirlImage3 {
-            width: 400px;
-            @include smallMobile {
-              width: 100%;
-            }
-            @include tabletAndAbove {
-              width: 400px;
-            }
-          }
-        }
-      }
-    }
-  }
-  .fourth-section{
-    background-color: #f7f7f7;
-    border-bottom: 1px solid;
-    .diamond-ambassador {
-      display: flex;
-      justify-content: space-between;
-      padding: 50px 80px;
-      @include smallMobile {
-        flex-direction: column;
-        padding: 20px;
-      }
-      @include tablet_768 {
-        flex-direction: column;
-        padding: 30px;
-      }
-      @include tabletAndAbove {
-        padding: 50px 50px 0;
-        flex-direction: row;
-      }
-      @include laptop {
-        padding: 50px 80px 0;
-      }
-      .diamond-ambassador-left {
-        img {
-          &.Man2 {
-            width: 450px;
-            @include smallMobile {
-              width: 100%;
-            }
-            @include tabletAndAbove {
-              width: 370px;
-            }
-          }
-        }
-      }
-      .diamond-ambassador-right {
-        ul {
-          padding-top: 20px;
-          li {
-            padding-bottom: 25px;
-            width: 350px;
-            @include smallMobile {
-              width: 100%;
-            }
-            @include tabletAndAbove {
-              width: 400px;
-            }
-            span {
-              display: flex;
-              gap: 8px;
-            }
-            img {
-              width: 25px;
-              @include smallMobile {
-                width: 15px;
-              }
-              @include smallTablet {
-                width: 20px;
-              }
-              @include tablet_768 {
-                width: 25px;
-              }
-            }
-          }
-        }
-        a {
-          &.subscribe {
-            border: 1px solid #ff9900;
-            padding: 8px 20px;
-            border-radius: 5px;
-            margin-left: 35px;
-            background-color: #ff9900;
-            color: $black;
-          }
-        }
-      }
-    }
-  }
+
+  .second-section,
+  .third-section,
+  .fourth-section,
   .fifth-section {
     background-color: #f7f7f7;
     border-bottom: 1px solid;
+
+    .enterprise-ambassador,
+    .access-pro-ambassador,
+    .diamond-ambassador,
     .premium-ambassador {
       display: flex;
       justify-content: space-between;
       padding: 50px 80px;
+
       @include smallMobile {
         flex-direction: column;
         padding: 20px;
       }
+
       @include tablet_768 {
         flex-direction: column;
         padding: 30px;
       }
+
       @include tabletAndAbove {
         padding: 50px 50px 0;
         flex-direction: row;
       }
+
       @include laptop {
         padding: 50px 80px 0;
       }
-      .premium-ambassador-left {
-        @include smallMobile {
-          order: 1;
-        }
-        @include tabletAndAbove {
-          order: unset;
-        }
-        ul {
-          padding-top: 20px;
-          li {
-            padding-bottom: 25px;
-            width: 350px;
+
+      &-left {
+        img {
+          &.Man1 {
             @include smallMobile {
               width: 100%;
             }
+
+            @include tabletAndAbove {
+              width: 430px;
+            }
+          }
+          &.Man2 {
+            @include smallMobile {
+              width: 100%;
+            }
+
+            @include tabletAndAbove {
+              width: 320px;
+            }
+          }
+        }
+      }
+      &-right {
+        img {
+          &.GirlImage3 {
+            width: 100%;
+          }
+          &.GirlImage4 {
+            @include smallMobile {
+              width: 100%;
+            }
+
+            @include tabletAndAbove {
+              width: 430px;
+            }
+          }
+        }
+      }
+      &-right,
+      &-left {
+        ul {
+          padding-top: 20px;
+
+          li {
+            padding-bottom: 25px;
+            width: 350px;
+
+            @include smallMobile {
+              width: 100%;
+            }
+
             @include tabletAndAbove {
               width: 400px;
             }
+
             span {
               display: flex;
               gap: 8px;
             }
+
             img {
               width: 25px;
+
               @include smallMobile {
                 width: 15px;
               }
+
               @include smallTablet {
                 width: 20px;
               }
-              @include tablet_768 {
-                width: 25px;
-              }
             }
           }
         }
-        a {
-          &.subscribe {
-            border: 1px solid #ff9900;
-            padding: 8px 20px;
-            border-radius: 5px;
-            margin-left: 35px;
-            background-color: #ff9900;
-            color: $black;
-          }
+
+        a.subscribe {
+          border: 1px solid #ff9900;
+          padding: 8px 20px;
+          border-radius: 5px;
+          margin-left: 35px;
+          background-color: #ff9900;
+          color: $black;
         }
       }
-      .premium-ambassador-right {
-        img {
-          &.GirlImage4 {
-            width: 400px;
-            @include smallMobile {
-              width: 100%;
-            }
-            @include tabletAndAbove {
-              width: 450px;
-            }
-          }
+    }
+  }
+
+  // Adjustments for specific sections
+  .second-section {
+    .subscription-section {
+      h2 {
+        text-align: center;
+        @include smallMobile {
+          width: 300px;
+          margin: 0 auto;
+        }
+        @include tablet_768 {
+          width: 100%;
         }
       }
+    }
+  }
+  .third-section,
+  .fifth-section {
+    .access-pro-ambassador-left,
+    .premium-ambassador-left {
+      @include smallMobile {
+        order: 1;
+      }
+      @include tabletAndAbove {
+        order: unset;
+      }
+    }
+
+    @include tabletAndAbove {
+      order: unset;
     }
   }
 }

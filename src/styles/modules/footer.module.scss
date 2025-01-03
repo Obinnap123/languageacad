@@ -3,7 +3,7 @@
 .footer {
   .footer-navbar {
     background-color: $primary-color;
-    padding: 30px 80px;
+    padding: 30px 75px;
     display: flex;
     justify-content: space-between;
     @include smallMobile {
@@ -22,7 +22,7 @@
       padding: 30px 50px;
     }
     @include laptop {
-      padding: 30px 80px;
+      padding: 30px 75px;
     }
     // gap: 150px;
     .Logo2 {

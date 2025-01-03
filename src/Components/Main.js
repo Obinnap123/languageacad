@@ -96,30 +96,78 @@ function Main() {
   };
 
   const benefitsData = [
-    { text: "Learn one language free", image: Images.CheckMark, imageClass: "check-mark", },
+    {
+      text: "Learn one language free",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
+    },
     {
       text: "Earn 10 dollars on every Diamond Plus Ambassador registered",
-      image: Images.CheckMark, imageClass: "check-mark",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
     },
     {
       text: "Earn 5 dollars on every Premium Ambassador registered",
-      image: Images.CheckMark, imageClass: "check-mark",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
     },
     {
       text: "Earn 3 dollars on every Enterprise Ambassador registered",
-      image: Images.CheckMark, imageClass: "check-mark",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
     },
     {
       text: "Earn 0 dollars on every Access Pro Ambassador registered",
-      image: Images.CheckMark, imageClass: "check-mark",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
     },
     {
       text: "Earn 10 dollars on every student you bring to language academy",
-      image: Images.CheckMark, imageClass: "check-mark",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
     },
     {
       text: "Earn 5 dollars each from all students your downline register every month",
-      image: Images.CheckMark, imageClass: "check-mark",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
+    },
+  ];
+
+  const benefitsData2 = [
+    {
+      text: "Learn a language at 60% discount ",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
+    },
+    {
+      text: "Earn 0 dollars on every Diamond Plus Ambassador registered ",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
+    },
+    {
+      text: "Earn 0 dollars on every Premium Ambassador registered ",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
+    },
+    {
+      text: "Earn 0 dollars on every Enterprise Ambassador registered ",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
+    },
+    {
+      text: "Earn 0 dollars on every Access Pro Ambassador registered ",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
+    },
+    {
+      text: "Earn 10 dollars on every student you bring to language academy ",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
+    },
+    {
+      text: "Earn 5 dollars each from all students your down line register every month",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
     },
   ];
 
@@ -197,7 +245,11 @@ function Main() {
             <h2>SUBSCRPTION PLAN AND BENEFITS</h2>
             <div className={`${styles["enterprise-ambassador"]}`}>
               <div className={styles["enterprise-ambassador-left"]}>
-                <img src={Images.Man1} alt="man pointing downwards" className={`${styles["Man1"]}`}/>
+                <img
+                  src={Images.Man1}
+                  alt="man pointing downwards"
+                  className={`${styles["Man1"]}`}
+                />
               </div>
               <div className={styles["enterprise-ambassador-right"]}>
                 <p>Easier decision making for</p>
@@ -212,8 +264,35 @@ function Main() {
                     />
                   ))}
                 </ul>
-                <a href="">Subscribe</a>
+                <a href="" className={styles.subscribe}>Subscribe</a>
               </div>
+            </div>
+          </div>
+          {/* <hr /> */}
+        </section>
+        <section className={styles["third-section"]}>
+          <div className={`${styles["access-pro-ambassador"]}`}>
+            <div className={styles["access-pro-ambassador-left"]}>
+              <p>Easier decision making for</p>
+              <h3>ACCESS PRO AMBASSADORS  </h3>
+              <ul>
+                {benefitsData.map((benefit, index) => (
+                  <ListItems
+                    key={index}
+                    image={benefit.image}
+                    text={benefit.text}
+                    imageClass={benefit.imageClass}
+                  />
+                ))}
+              </ul>
+              <a href="" className={styles.subscribe}>Subscribe</a>
+            </div>
+            <div className={styles["access-pro-ambassador-right"]}>
+              <img
+                src={Images.GirlImage3}
+                alt="girl folding her hands"
+                className={`${styles["GirlImage3"]}`}
+              />
             </div>
           </div>
         </section>

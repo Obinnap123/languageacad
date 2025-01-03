@@ -171,6 +171,81 @@ function Main() {
     },
   ];
 
+  const benefitsData3 = [
+    {
+      text: "Learn Two languages free ",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
+    },
+    {
+      text: "Earn 20 dollars on every Diamond Plus Ambassador registered  ",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
+    },
+    {
+      text: "Earn 10  dollars on every Premium Ambassador registered  ",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
+    },
+    {
+      text: "Earn 6 dollars on every Enterprise Ambassador registered  ",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
+    },
+    {
+      text: "Earn 0 dollars on every Access Pro Ambassador registered  ",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
+    },
+    {
+      text: "Earn 10 dollars on every student you bring to language academy  ",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
+    },
+    {
+      text: "Earn 5 dollars each from all students your down line register every month",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
+    },
+  ];
+
+  const benefitsData4 = [
+    {
+      text: "Learn one language free ",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
+    },
+    {
+      text: "Earn 15 dollars on every Diamond Plus Ambassador registered   ",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
+    },
+    {
+      text: "Earn 10 dollars on every Premium Ambassador registered  ",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
+    },
+    {
+      text: "Earn 7.5 dollars on every Enterprise Ambassador registered  ",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
+    },
+    {
+      text: "Earn 0 dollars on every Access Pro Ambassador registered   ",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
+    },
+    {
+      text: "Earn 10 dollars on every student you bring to language academy  ",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
+    },
+    {
+      text: "Earn 5 dollars each from all students your down line register every month",
+      image: Images.CheckMark,
+      imageClass: "check-mark",
+    },
+  ];
   return (
     <>
       <main className={styles.main}>
@@ -217,7 +292,7 @@ function Main() {
         </div>
         <section className={styles["first-section"]}>
           <div className={styles["packages"]}>
-            <div className={styles["ambassador-packages"]}>
+            <div className={`${styles["ambassador-packages"]}`}>
               <h2>AMBASSADOR PACKAGES</h2>
               <p>
                 Our approach to teaching is unique and our teachers are
@@ -264,7 +339,9 @@ function Main() {
                     />
                   ))}
                 </ul>
-                <a href="" className={styles.subscribe}>Subscribe</a>
+                <a href="" className={styles.subscribe}>
+                  Subscribe
+                </a>
               </div>
             </div>
           </div>
@@ -273,9 +350,9 @@ function Main() {
           <div className={`${styles["access-pro-ambassador"]}`}>
             <div className={styles["access-pro-ambassador-left"]}>
               <p>Easier decision making for</p>
-              <h3>ACCESS PRO AMBASSADORS  </h3>
+              <h3>ACCESS PRO AMBASSADORS </h3>
               <ul>
-                {benefitsData.map((benefit, index) => (
+                {benefitsData2.map((benefit, index) => (
                   <ListItems
                     key={index}
                     image={benefit.image}
@@ -284,13 +361,73 @@ function Main() {
                   />
                 ))}
               </ul>
-              <a href="" className={styles.subscribe}>Subscribe</a>
+              <a href="" className={styles.subscribe}>
+                Subscribe
+              </a>
             </div>
             <div className={styles["access-pro-ambassador-right"]}>
               <img
                 src={Images.GirlImage3}
                 alt="girl folding her hands"
                 className={`${styles["GirlImage3"]}`}
+              />
+            </div>
+          </div>
+        </section>
+
+        <section className={styles["fourth-section"]}>
+          <div className={`${styles["diamond-ambassador"]}`}>
+            <div className={styles["diamond-ambassador-left"]}>
+              <img
+                src={Images.Man2}
+                alt="a guy wearing a jean jacket"
+                className={`${styles["Man2"]}`}
+              />
+            </div>
+            <div className={styles["diamond-ambassador-right"]}>
+              <p>Easier decision making for</p>
+              <h3>DIAMOND AMBASSADORS </h3>
+              <ul>
+                {benefitsData3.map((benefit, index) => (
+                  <ListItems
+                    key={index}
+                    image={benefit.image}
+                    text={benefit.text}
+                    imageClass={benefit.imageClass}
+                  />
+                ))}
+              </ul>
+              <a href="" className={styles.subscribe}>
+                Subscribe
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section className={styles["fifth-section"]}>
+          <div className={`${styles["premium-ambassador"]}`}>
+            <div className={styles["premium-ambassador-left"]}>
+              <p>Easier decision making for</p>
+              <h3>ACCESS PRO AMBASSADORS </h3>
+              <ul>
+                {benefitsData4.map((benefit, index) => (
+                  <ListItems
+                    key={index}
+                    image={benefit.image}
+                    text={benefit.text}
+                    imageClass={benefit.imageClass}
+                  />
+                ))}
+              </ul>
+              <a href="" className={styles.subscribe}>
+                Subscribe
+              </a>
+            </div>
+            <div className={styles["premium-ambassador-right"]}>
+              <img
+                src={Images.GirlImage4}
+                alt="girl folding her hands"
+                className={`${styles["GirlImage4"]}`}
               />
             </div>
           </div>

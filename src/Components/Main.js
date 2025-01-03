@@ -435,8 +435,8 @@ function Main() {
         <section className={styles["sixth-section"]}>
           <div className={`${styles["we-can-help"]}`}>
             <div className={styles["first-avatars"]}>
-              <img src={Images.Avatar1} alt=""  className={styles["Avatar1"]}/>
-              <img src={Images.Avatar2} alt="" className={styles["Avatar2"]}/>
+              <img src={Images.Avatar1} alt="" className={styles["Avatar1"]} />
+              <img src={Images.Avatar2} alt="" className={styles["Avatar2"]} />
             </div>
             <div className={styles["hear-from-us"]}>
               <h2>Doubting? Hear from others</h2>
@@ -452,6 +452,47 @@ function Main() {
             </div>
             <div className={styles["third-avatar"]}>
               <img src={Images.Avatar5} alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section className={styles["seventh-section"]}>
+          <div className={styles["what-we-sell"]}>
+            <div className={styles["what-we-sell-text"]}>
+              <h2>What do we sell?</h2>
+              <p>
+                We promote the learning of INTERNATIONAL LANGUAGES AND
+                INDIGENOUS LANGUAGES
+              </p>
+            </div>
+            <div className={styles["languages"]}>
+              <div className={styles["international-language"]}>
+                <h3>INTERNATIONAL LANCUACES: </h3>
+                <p>
+                  FRENCH,CERMAN,SPANISH AND CHINESE INTERNATIONAL LANCUACES:
+                  FRENCH,CERMAN,SPANISH AND CHINESE <br /> -For
+                  business,education or leisure purposes
+                </p>
+              </div>
+              <div className={styles["indegenous-language"]}>
+                <h3>INDICENOUS LANCUACES: VORUBA,ICBO AND HAUSA </h3>
+                <p>
+                  Learning indigenous language helps the learner to connect to n
+                  s or her root
+                </p>
+              </div>
+            </div>
+            <div className={styles["virtual-class"]}>
+              <h3>OUR VIRTUAL CLASS</h3>
+              <p>
+                STUDENTS LEARN FROM THE COMFORT OF THEIR HOMES Our online
+                education platform is a fully functional learning place,it is
+                simple,unique and interactive. Our teachers are extremely h ghly
+                rated
+              </p>
+            </div>
+            <div className={styles["learn-more-btn"]}>
+              <a href="">Learn More</a>
             </div>
           </div>
         </section>

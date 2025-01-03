@@ -342,4 +342,138 @@
       order: unset;
     }
   }
+
+  .sixth-section {
+    background: $tertiaryBG;
+    .we-can-help {
+      padding: 50px 80px;
+      @include smallMobile {
+        padding: 20px;
+      }
+      @include tablet_768{
+        padding: 30px;
+      }
+      @include tabletAndAbove {
+        padding: 50px;
+      }
+      @include laptop {
+        padding: 50px 80px;
+      }
+      img {
+        width: 30%;
+        @include smallMobile {
+          width: 40%;
+        }
+        @include tablet_768 {
+          width: 30%;
+        }
+        @include tabletAndAbove {
+          width: 25%;
+        }
+      }
+      .first-avatars {
+        display: flex;
+        justify-content: space-between;
+        .Avatar1 {
+          padding-top: 50px;
+          @include smallMobile {
+            padding-top: 20px;
+          }
+          @include tablet_768 {
+            padding-top: 50px;
+          }
+        }
+        .Avatar2 {
+          margin-bottom: 50px;
+          @include smallMobile {
+            margin-bottom: 20px;
+          }
+          @include tablet_768 {
+            margin-bottom: 50px;
+          }
+        }
+      }
+      .hear-from-us {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -60px;
+        padding-right: 120px;
+        @include smallMobile {
+          margin: 0;
+          padding: 0;
+        }
+        @include tablet_768 {
+          margin-top: -20px;
+          padding: 0;
+        }
+        @include tabletAndAbove {
+          margin-top: -60px;
+          padding-right: 120px;
+        }
+        h2 {
+          padding-bottom: 20px;
+          font-size: 36px;
+          @include smallMobile {
+            font-size: 16px;
+          }
+          @include tablet_768 {
+            font-size: 30px;
+          }
+          @include tabletAndAbove {
+            font-size: 36px;
+          }
+        }
+        p {
+          width: 470px;
+          text-align: center;
+          padding-bottom: 20px;
+          color: rgba(86, 117, 146, 1);
+          @include smallMobile {
+            width: 300px;
+            font-size: 13px;
+          }
+          @include tablet_768 {
+            width: 470px;
+            font-size: 16px;
+          }
+        }
+        a {
+          padding: 8px 20px;
+          border: 1px solid #ff9900;
+          text-align: center;
+          background-color: #ff9900;
+          color: $white;
+          @include smallMobile {
+            padding: 4px 10px;
+            font-size: 13px;
+            margin-bottom: 20px;
+          }
+          @include tablet_768 {
+            padding: 8px 20px;
+            font-size: 16px;
+            margin: 0;
+          }
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+      .second-avatars {
+        display: flex;
+        justify-content: space-between;
+      }
+      .third-avatar {
+        display: flex;
+        justify-content: center;
+        @include smallMobile {
+          margin-top: 20px;
+        }
+        @include tablet_768{
+          margin: 0;
+        }
+      }
+    }
+  }
 }

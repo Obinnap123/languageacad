@@ -432,6 +432,29 @@ function Main() {
             </div>
           </div>
         </section>
+        <section className={styles["sixth-section"]}>
+          <div className={`${styles["we-can-help"]}`}>
+            <div className={styles["first-avatars"]}>
+              <img src={Images.Avatar1} alt=""  className={styles["Avatar1"]}/>
+              <img src={Images.Avatar2} alt="" className={styles["Avatar2"]}/>
+            </div>
+            <div className={styles["hear-from-us"]}>
+              <h2>Doubting? Hear from others</h2>
+              <p>
+                Do you require some help for your project: Conception workshop,
+                prototyping, marketing strategy, landing page, Ux/UI?
+              </p>
+              <a href="">Register Now</a>
+            </div>
+            <div className={styles["second-avatars"]}>
+              <img src={Images.Avatar3} alt="" />
+              <img src={Images.Avatar4} alt="" />
+            </div>
+            <div className={styles["third-avatar"]}>
+              <img src={Images.Avatar5} alt="" />
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );

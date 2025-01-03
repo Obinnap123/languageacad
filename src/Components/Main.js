@@ -268,7 +268,6 @@ function Main() {
               </div>
             </div>
           </div>
-          {/* <hr /> */}
         </section>
         <section className={styles["third-section"]}>
           <div className={`${styles["access-pro-ambassador"]}`}>

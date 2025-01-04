@@ -64,12 +64,14 @@
           width: 50%;
         }
         li {
-          text-align: center;
+          
           @include smallMobile {
             padding: 0 0 20px;
+            text-align: center;
           }
           @include tablet_768 {
             padding: 0;
+            text-align: left;
           }
         }
       }
@@ -90,11 +92,14 @@
         @include tabletAndAbove {
           gap: 60px;
         }
-        .login {
-          border: 1px solid $primary-color;
-          &:hover {
-            background-color: $primary-color;
-            color: white;
+        a{
+          text-align: center;
+          &.login {
+            border: 1px solid $primary-color;
+            &:hover {
+              background-color: $primary-color;
+              color: white;
+            }
           }
         }
       }

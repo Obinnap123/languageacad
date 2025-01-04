@@ -64,6 +64,7 @@
           width: 50%;
         }
         li {
+          text-align: center;
           @include smallMobile {
             padding: 0 0 20px;
           }
